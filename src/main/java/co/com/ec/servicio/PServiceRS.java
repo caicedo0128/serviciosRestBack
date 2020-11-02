@@ -6,7 +6,9 @@
 package co.com.ec.servicio;
 
 import co.com.ec.data.PeliculaDao;
+import co.com.ec.data.SerieDao;
 import co.com.ec.domain.Pelicula;
+import co.com.ec.domain.Serie;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -28,11 +30,14 @@ import javax.ws.rs.core.Response.Status;
  */
 @Stateless
 @Path("/peliculas")
-public class PSServiceRS {
+public class PServiceRS {
     
     @Inject
     private PeliculaDao peliculaDao;
     
+    /*
+    METODOS PARA PELICULAS
+    */
     @GET
     @Produces(value = MediaType.APPLICATION_JSON)
     public List<Pelicula> findAll(){
@@ -83,6 +88,5 @@ public class PSServiceRS {
         System.out.println("se elimino la pelicula: " + id);
         return Response.ok().build();
     }
-    
     
 }

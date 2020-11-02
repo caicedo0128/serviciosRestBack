@@ -1,7 +1,8 @@
+co\com\ec\servicio\SServiceRS.class
 co\com\ec\data\PeliculaDao.class
 co\com\ec\domain\Serie.class
+co\com\ec\servicio\PServiceRS.class
 co\com\ec\data\SerieDao.class
-co\com\ec\servicio\PSServiceRS.class
 co\com\ec\web\JAXRSActivator.class
 co\com\ec\domain\Pelicula.class
 co\com\ec\web\CorsFilter.class
